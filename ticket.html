@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Burma League</title>
+  <link rel="stylesheet" href="ticket.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Boarding Ticket Generator</h2>
+    <input type="text" id="name" placeholder="Enter Name">
+    <input type="text" id="id" placeholder="Enter ID">
+    <input type="text" id="qrdata" placeholder="Enter QR Link">
+    <button onclick="generateTicket()">Generate Ticket</button>
+  </div>
+
+  <div class="ticket" id="ticket" style="display: none;">
+    <div class="ticket-header">BOARDING TICKET</div>
+    <div class="ticket-body">
+      <div class="ticket-left">
+        <p><strong>TIME:</strong> 6:30</p>
+        <p><strong>DATE:</strong> 12.7.2025</p>
+        <p><strong>NAME:</strong> <span id="ticketName"></span></p>
+        <p><strong>ID:</strong> <span id="ticketID"></span></p>
+      </div>
+      <div class="ticket-right">
+        <p>BM1301</p>
+        <div id="qrcode"></div>
+      </div>
+    </div>
+    <div class="ticket-footer">burmaleague.official@gmail.com</div>
+  </div>
+
+  <div id="downloadSection" style="display: none; margin-top: 20px;">
+    <select id="downloadType">
+      <option value="png">Download as PNG</option>
+      <option value="pdf">Download as PDF</option>
+    </select>
+    <button onclick="downloadTicket()">Download Ticket</button>
+  </div>
+
+  <script src="qrcode.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="ticket.js"></script>
+</body>
+</html>

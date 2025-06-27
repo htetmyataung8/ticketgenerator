@@ -1,0 +1,70 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f2f2f2;
+  padding: 30px;
+  text-align: center;
+}
+
+.form-container {
+  margin-bottom: 30px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #c59b50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a8833e;
+}
+
+.ticket {
+  background: #fff;
+  width: 500px;
+  margin: 0 auto;
+  border: 2px solid #b1863b;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.ticket-header {
+  background-color: #5b3d18;
+  color: white;
+  font-size: 24px;
+  padding: 15px;
+}
+
+.ticket-body {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff6e6;
+}
+
+.ticket-left {
+  text-align: left;
+}
+
+.ticket-right {
+  text-align: center;
+}
+
+.ticket-footer {
+  font-size: 12px;
+  padding: 10px;
+  background-color: #fff6e6;
+  color: #555;
+}
